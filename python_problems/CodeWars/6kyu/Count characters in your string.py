@@ -12,5 +12,3 @@ def count(s):
             counter.setdefault(i, s.count(i))
         return counter
 
-
-print(count('abcd0'))
