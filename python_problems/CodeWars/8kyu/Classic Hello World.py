@@ -17,4 +17,4 @@ class Solution:
         print('Hello World!')
 
 ob1 = Solution()
-ob1.greet()
+ob1.main()
