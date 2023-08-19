@@ -1,23 +1,19 @@
-'''Imagine you are creating a game where the user has to guess the correct number. But there is a limit of how many guesses the user can do.
+'''Hey Codewarrior!
 
-If the user tries to guess more than the limit, the function should throw an error.
-If the user guess is right it should return true.
-If the user guess is wrong it should return false and lose a life.
-Can you finish the game so all the rules are met?
+You already implemented a Cube class, but now we need your help again! I'm talking about constructors. We don't have one. Let's code two: One taking an integer and one handling no given arguments!
 
-'''
+Also we got a problem with negative values. Correct the code so negative values will be switched to positive ones!
 
-class Guesser:
-    def __init__(self, number, lives):
-        self.number = number
-        self.lives = lives
-  
-    def guess(self,n):
-        if self.lives < 1: raise "Too many guesses!"
-        if self.number == n: return True
-        self.lives -= 1
-        return False
+The constructor taking no arguments should assign 0 to Cube's Side property.'''
 
+class Cube:
+	def __init__(self, side = 0):
+		self._side = abs(side)
 
-
-        
+	def get_side(self):
+		"""Return the side of the Cube"""
+		return self._side
+	
+	def set_side(self, new_side):
+		"""Set the value of the Cube's side."""
+		self._side = abs(new_side)
