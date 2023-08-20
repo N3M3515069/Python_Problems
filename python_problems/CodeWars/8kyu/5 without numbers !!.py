@@ -16,4 +16,4 @@ def unusual_five():
     valuex = value.pop()
     valuex = value.pop()
     for i in valuex:
-        return int(i
+        return int(i)
