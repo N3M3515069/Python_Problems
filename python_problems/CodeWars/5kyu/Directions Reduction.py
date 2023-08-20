@@ -50,7 +50,7 @@ def dirReduc(arr):
             i = 0
         else:
             i += 1
-    return a
+    return arr
 
 
 
